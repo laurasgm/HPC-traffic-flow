@@ -1,0 +1,18 @@
+#!/bin/bash
+# My first script
+
+#compilamos
+g++ -o traffic traffic.cpp -larmadillo
+
+
+#ejecutamos 
+for i in $(seq 1 5 ); do
+    
+    ./traffic  1000 >> datos_traffic_secuencial.txt
+    ./traffic  10000 >> datos_traffic_secuencial.txt
+    ./traffic  100000 >> datos_traffic_secuencial.txt
+    ./traffic  300000 >> datos_traffic_secuencial.txt
+    
+
+    
+done 
