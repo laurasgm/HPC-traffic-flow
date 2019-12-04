@@ -6,7 +6,7 @@ using namespace std;
 using namespace arma;
 
 //g++ -o traffic traffic.cpp -larmadillo
-//./traffic 
+//./traffic 4
 
 
 int main(int argc, char *argv[]){
